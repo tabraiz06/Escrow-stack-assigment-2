@@ -2,7 +2,7 @@
 
 # install the project using
 
-    git clone "git@github.com:tabraiz06/Escrow-stack-assigment-2.git"
+    git clone "https://github.com/tabraiz06/Escrow-stack-assigment-1.git"
 
 # cd fronted
 
