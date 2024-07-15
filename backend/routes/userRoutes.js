@@ -1,10 +1,9 @@
 const express = require("express");
 const router = express.Router();
 
-let users = []; // To keep track of users and their subscriptions
+let users = [];
 const supportedStocks = ["GOOG", "TSLA", "AMZN", "META", "NVDA"];
 
-// Simple user authentication
 router.post("/login", (req, res) => {
   const { email } = req.body;
 

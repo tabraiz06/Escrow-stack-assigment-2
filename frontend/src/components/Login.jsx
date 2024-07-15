@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 
 const Login = ({ setUser }) => {
   const [email, setEmail] = useState("");
-  const history = useNavigate();
+  const Navigate = useNavigate();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -19,7 +19,7 @@ const Login = ({ setUser }) => {
       const result = await response.json();
       console.log(result);
       setUser(result);
-      history("/dashboard");
+      Navigate("/dashboard");
     } catch (error) {
       console.error("Error logging in", error);
     }
